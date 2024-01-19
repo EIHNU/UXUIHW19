@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/UXUIHW18/CSS/style.css"> 
+    <link rel="stylesheet" href="/CSS/style.css"> 
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="manifest" href="images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <title>eh...</title>
 </head>
 <body>
+    <!--This is supposed to be a page preloader thing but theres. something wrong with it-->
+    <div class="loaderContainer">
+    <div class="loader"></div></div>
     <header>
     <div class="navigation">
     <div class="inline-block logo">
@@ -22,6 +30,7 @@
                 <li class="inline-block navSkill"><a href="#">Skills</a></li>
                 <li class="inline-block navWork"><a href="#">My Work</a></li>
                 <li class="inline-block navContact"><a href="#">Contact Me</a></li>
+                <button class="Toggle">Toggle Dark</div>
             </ul>
         </nav>
     </div>
@@ -31,9 +40,9 @@
     <div class="heroimg">
         <img src="images/headshotplaceholder.png" style="height:300px;width:300px;"></div>
     <div class="content">
+        <h1>hiiiii omg i love 2 <span class="glitch">cool guy</span></h1>
         <p>"I create art that is pleasing and resonant. I design user interfaces that are intuitive and friendly. I make all sorts of other stuff, in a lot of other mediums. Lets make some stuff together. </p>
-        <button> Download Resume
-                 </button>
+        <a href="content/Resume21F.pdf" download="Resume"><Span class="btnp">Download Resume</span></a> <span class="btnp">Contact Me</span>
     </div>
 </section>
 <!--Skills Section, coded with css flex-->
@@ -41,31 +50,31 @@
     <h1>My skills</h1>
     <div class="flexContainer">
         <div class="flexItem">
-            <img src="images/">
+            <img src="images/undraw_experience_design_re_dmqq.svg">
             <h3>Visual Design</h3>
             <p>Strategic Implementation of images, colors and fonts to help develop the look and feel of the product, creating interfaces that provide optimal experiences.
             </p>
         </div>
         <div class="flexItem">
-            <img src="images/">
+            <img src="images/undraw_prototyping_process_re_7a6p.svg">
             <h3>Collaboration</h3>
             <p>Working well with others, achiving common goals and building relationships on the team. Creating a work environement that is inclusive and respectful.
             </p>
         </div>
         <div class="flexItem">
-            <img src="images/">
+            <img src="images/undraw_responsive_re_e1nn.svg">
             <h3>Creativity</h3>
             <p>Developing new ideas, increasing efficieny and devising new and innovative ways to solve problems. Problem solving and interesting approaches. Making observations and being curious.
             </p>
         </div>
         <div class="flexItem">
-            <img src="images/">
+            <img src="images/undraw_mind_map_re_nlb6.svg">
             <h3>Slaying</h3>
             <p>Looking cool and doing all of the above with as much swag as possible, and cooking with gas when i do it. </p>
         </div>
         
         <div class="flexItem">
-            <img src="images/">
+            <img src="images/undraw_static_website_re_x70h.svg">
             <h3>This ones just for funsies</h3>
             <p>I cant imagine actually putting this many ""skills" on my online portfolio....haha</p>
         </div>
@@ -149,7 +158,6 @@
     <label for="textarea">Leave a message:</label>
     <textarea name="message">Write something here</textarea><br>
     <input type="button" value="submit">
-
 </form>
 </section>
 <!--Footer-->
@@ -163,4 +171,5 @@
     <p>Copyright 2023. Made with 🖤 in Chicago.</p>
 </footer>     
 </body>
+<script src="js/index.js"></script>     
 </html>

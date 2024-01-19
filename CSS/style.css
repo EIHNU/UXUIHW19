@@ -2,21 +2,49 @@ body{
     padding:0;
     margin:0;
 }
+
+.dark-mode{
+    background-color:#373738;
+}
+/* this isnt working arg!!!
+.loaderContainer {
+    background-color:aliceblue;
+    width:100%;
+    height:100%;
+}
+.loader {
+  z-index: 99999;
+  display: block;
+  position: fixed;
+  top: 0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:url(/images/286.gif)
+  }
+
+p {
+    font-family:'Courier New', Courier, monospace;
+}*/
+
 /*Navigation*/
 .navigation {
     height: 15vh;
     border-bottom: solid grey;
 }
+
 .inline-block {
     padding:1%;
     display:inline-flex;
     text-align:center;
     width:70%;
 }
+
 .inline-block.logo {
     padding:1%;
     width:97%;
 }
+
 .logo {
     position:absolute;
     margin-left:50px;
@@ -30,7 +58,7 @@ nav {
 nav ul {
     display:flex;
     width:35vw;
-    margin-left:53%;
+    margin-left:50%;
     position:relative;
 }
 nav li {
@@ -49,28 +77,66 @@ nav li a:visited {
     text-decoration: none;
     color: black;
 }
+
 nav li:hover {
     background-color: rgb(165, 228, 105);
 }
+
 nav li:active{
     background-color: blueviolet;
 }
+.loaderContainer{
+    display: block;
+}
+
 /*Hero Section*/
 .heroContainer{
-    display:flex;
-    padding: 33px;
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap:1rem;
 }
+
 .heroimg {
-    height:auto;
-    width:auto;
+    margin-left:auto;
+    margin-right:auto;
     padding:25px;
-    flex-flow:row-reverse wrap;
-    justify-content:space-around;
+    display:block;
 }
+
 .content {
     width:auto;
     margin:15px;
     padding: 20px;
+    display:block;
+}
+
+.content h1{
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size:2.98rem;
+    
+}
+
+.btnp {
+    display:inline-block;
+    padding: 1rem 1.5rem;
+    color:white;
+    background-color:#8c66b3;
+    text-decoration:none;
+    border:none;
+    border-radius:100px;
+}
+
+.btnp:hover {
+    display:inline-block;
+    padding: 1rem 1.5rem;
+    color:white;
+    background-color:greenyellow;
+    text-decoration:none;
+    border:none;
+    border-radius:100px;
 }
 
 /*Skills Section*/
@@ -95,6 +161,8 @@ nav li:active{
 }
 
 .flexItem img{
+    height:0 auto;
+    width:80%;
     margin:15px;
 }
 
@@ -102,7 +170,6 @@ nav li:active{
 .mywork{
     padding:50px;
     margin:0 auto;
-    overflow: scroll;
 }
 
 .mywork h1 {
@@ -112,13 +179,13 @@ margin:auto;
 
 .workgrid{
 display:grid;
-grid-template-columns:auto auto;
-grid-template-rows: auto auto auto;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
 gap:25px 15px;
 padding:2%; 
 align-content: center;
-overflow:hidden;
 }
+
 .workgrid> div {
     background-color:lightgrey;
     border-radius: 3%;
@@ -130,22 +197,26 @@ width:75%;
 height:auto;
 border-radius:5%;
 }
+
 .workgrid h3{
     color: black;
 }
+
 .workgrid p{
     color:black;
 }
+
 .workgrid button{
     margin:16px;
 }
+
 .workgrid>div:hover{
     background-color: #8c66b3;
 }
 
 /*Contact form*/
 .contact h1{
-    margin: 50px;
+    margin-left: 15px;
 }
 .contact{
     display:flex;
@@ -156,7 +227,7 @@ border-radius:5%;
  
 .contact form{
     margin: 2%;
-    padding: 20px;
+    padding: 25px;
     background-color: lightgray;
     width:50%;
     height:auto;
@@ -192,10 +263,14 @@ textarea{
     border-radius:3px;
     resize:vertical
 }
+
 input[type=button]{
-    margin:10px;
-    padding:10px;
-    width:25%;
+    padding: 1rem 1.5rem;
+    color:green;
+    background-color:#8c66b3;
+    text-decoration:none;
+    border:none;
+    border-radius:100px;
 }
 /*Footer*/
 footer {
@@ -225,9 +300,11 @@ footer li a:visited{
     text-decoration: none;
     color:gold;
 }
+
 footer li:hover{
     background-color:greenyellow;
 }
+
 footer p{
     padding-left:3%;
     color:white;
@@ -344,11 +421,12 @@ margin:auto;
 
 .workgrid{
 display:grid;
-grid-template-columns: auto;
-grid-template-rows: auto auto;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
 grid-gap:20px;
 padding:20px; 
 }
+
 .workgrid> div {
     background-color:blanchedalmond;
     border-radius: 3%;
