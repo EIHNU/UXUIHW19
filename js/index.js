@@ -5,5 +5,3 @@ $(window).on("load",function(){
 $(".toggle").on("click",function(){
   $(".dark-mode").toggle()
 });
-//the loader script works but its ""disabled"" for now since its annoying, trying to fix it. 
-//I dont know why the toggle doesn't work. 
